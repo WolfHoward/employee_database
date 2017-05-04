@@ -36,7 +36,7 @@ class Employee(UserMixin, db.Model):
         """
         self.password_hash = generate_password_hash(password)
 
-    def verify_password(self, paassword):
+    def verify_password(self, password):
         """
         Check if hashed password mathes actual password
         """
